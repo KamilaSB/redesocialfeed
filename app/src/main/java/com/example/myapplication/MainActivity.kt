@@ -215,23 +215,16 @@ fun FolioBottomNavigation() {
         modifier = Modifier.height(80.dp)
     ) {
         NavigationBarItem(
-            selected = true,
-            onClick = { },
-            icon = { Icon(Icons.Filled.Home, contentDescription = "Feed") },
-            label = { Text("Feed", fontSize = 10.sp) },
-            colors = NavigationBarItemDefaults.colors(
-                selectedIconColor = FolioOrange,
-                selectedTextColor = FolioOrange,
-                unselectedIconColor = FolioTextSecondary,
-                unselectedTextColor = FolioTextSecondary,
-                indicatorColor = Color.Transparent
-            )
+            selected = false,
+            onClick = {},
+            icon = { Icon(Icons.Outlined.Description, contentDescription = null) },
+            label = { Text("Feed") }
         )
         NavigationBarItem(
             selected = false,
-            onClick = { },
-            icon = { Icon(Icons.Outlined.Email, contentDescription = "Chat") },
-            label = { Text("Chat", fontSize = 10.sp) }
+            onClick = {},
+            icon = { Icon(Icons.Outlined.ChatBubbleOutline, contentDescription = null) },
+            label = { Text("Chat") }
         )
         NavigationBarItem(
             selected = false,
